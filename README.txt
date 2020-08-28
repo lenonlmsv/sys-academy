@@ -9,3 +9,5 @@ Imagem principal da p�gina de homescreen
 DASHBOARD > SITE ADMINISTRATION > APPEARENCE > LOGOS > COMPACT LOGO
 
 Imagem do header da p�gina
+
+Teste commit
