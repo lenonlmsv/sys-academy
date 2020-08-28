@@ -21,7 +21,12 @@ divFooter.appendChild(divMedium);
 
 document.querySelector('#page-footer').appendChild(divFooter);
 
-const backTop = document.querySelector('#back-to-top').cloneNode(true);
-document.getElementById('back-to-top').outerHTML = ""
-const divFooterButton = document.getElementById('divBackTop');
-document.getElementById('divBackTop').appendChild(backTop);
+window.onload = function() {
+    const backTop = document.querySelector('#back-to-top').cloneNode(true);
+    document.getElementById('back-to-top').outerHTML = ""
+    document.getElementById('divBackTop').appendChild(backTop);
+}
+//const divFooterButton = document.getElementById('divBackTop');
+
+console.log("Script de footer executado com sucesso.")
+
