@@ -25,6 +25,17 @@
     font-family: 'Bariol Regular';
 }
 
-#page-wrapper {
-    max-width: 1400px;
-}   
+/* Fragmento de CSS inserido dentro do tema FORDSON > COLORS
+div.mr-auto {
+    display:none!important;
+}
+
+#page {
+    margin-top: 0!important;
+}
+
+#page-header .col-12.pt-3.pb-3 {
+    padding-top: 0!important;
+}
+
+*/
