@@ -9,3 +9,9 @@ Imagem principal da p�gina de homescreen
 DASHBOARD > SITE ADMINISTRATION > APPEARENCE > LOGOS > COMPACT LOGO
 
 Imagem do header da p�gina
+
+DASHBOARD > SITE ADMINISTRATION > APPEARENCE > THEME > FORDSON > MARKETING SPOT
+
+Local para imagens e notícias
+
+]

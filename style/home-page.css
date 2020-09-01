@@ -1,0 +1,28 @@
+@media (max-width:1199px) {
+/* Corpo da homepage */
+    #page-header .card, div.col-12.pt-3.pb-3 {  /* Concentram todos os display none*/
+    display: none!important;
+    }
+
+    #page {
+        margin-top: 0;
+    }
+
+    #learningcontent {
+        margin-top: 0!important;
+    }
+
+    .headerlogo img {
+        padding: 0;
+    }
+
+    #page-header .pb-3 {
+        padding-top: 0;
+    }
+
+    #region-main, div.container-fluid, div.col-md-12, div.col-12.pt-3.pb-3 {
+        border: none!important;
+        padding: 0!important;
+    }
+    
+}
