@@ -4,12 +4,14 @@
     --color-background: #fff;
     --color-footer-background: #949494;
     --color-top-static-menu: #fff;
+    --color-primary-light: #f2b1d0;
     --color-primary: #db81ac; /* Rosa claro da logo */
-    --color-primary-dark: #9E4B98; /* Rosa escuro da logo */
+    --color-primary-dark: #eb34cc; /* Rosa escuro da logo */
     --color-secondary: #6C9CD1; /* Azul claro da logo */
     --color-secondary-dark: #1665AC; /* Azul escuro da logo */
     --color-text-primary: #ffffff;
     --color-text-secondary: #6698D0;
+    --color-text-light: rgb(172, 172, 173, 0.6);
     --color-text-dark: #3d3d3d;
     --image-background-header: url('https://sysmanager-dev.outsystemscloud.com/UIPattern/img/BackgroundAHeader.png?19377');
     --image-footer-sys: url('https://www.sysmanager.com.br/wp-content/uploads/2019/02/Logo_NovoSite-300x89.png');
@@ -23,6 +25,10 @@
 
 * {
     font-family: 'Bariol Regular';
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    outline: 0!important;
 }
 
 /* Fragmento de CSS inserido dentro do tema FORDSON > COLORS

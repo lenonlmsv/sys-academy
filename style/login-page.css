@@ -1,0 +1,41 @@
+form.m-t-1, div.signinform > p, div.signinform > h3 {
+    display: none!important; /* Mostra ou não o formulário de login padrão, deixando apenas o login integrado */
+}
+
+div.card-title.text-xs-center {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.signinform {
+    text-align: center;
+}
+
+.signinform h6, .signinform p {
+    font-size: 0.9rem;
+    padding-bottom: 1rem    ;
+}
+
+#yui_3_17_2_1_1599158393927_23 {
+    display: flex;
+    justify-content: center;
+}
+
+.fpsignup {
+    width: 90vw;
+}
+
+.btn-secondary {
+    color: var(--color-text-dark);
+    border-color: var(--color-secondary);
+    border-radius: 3%;
+    padding: 0.7rem;
+}
+
+@media(min-width:1199px) {
+    .imgSys {
+        height: 2.5rem;
+    }
+}
+

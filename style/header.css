@@ -7,7 +7,26 @@
     position: relative;
 }
 
-@media (max-width:400px) {
+@media (max-width:430px) {
+    nav.navbar .logo img {
+        margin-left: 0.5rem;
+    }
+
+    button.btn.nav-link.float-sm-left.mr-1.btn-secondary {
+        margin: 0!important;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0.8rem;
+        display: flex;
+        justify-content: center;
+        width: 0.5rem;
+    }
+
+    i.icon.fa.fa-bars.fa-fw {
+        font-size: 0.8rem;
+    }
+
     .usermenu {
       font-size: 0.8rem;
     }
