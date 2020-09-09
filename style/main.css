@@ -1,14 +1,15 @@
-/* Define estilização para header e footer */
+/* Define estilização para header e footer 
+IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPEARENCE > ADDITIONAL HTML*/
 
 :root {
     --color-background: #fff;
     --color-footer-background: #949494;
     --color-top-static-menu: #fff;
     --color-primary-light: #f2b1d0;
-    --color-primary: #db81ac; /* Rosa claro da logo */
-    --color-primary-dark: #eb34cc; /* Rosa escuro da logo */
-    --color-secondary: #6C9CD1; /* Azul claro da logo */
-    --color-secondary-dark: #1665AC; /* Azul escuro da logo */
+    --color-primary: #d65c97; /* Rosa claro da logo */
+    --color-primary-dark: #cc5890; /* Rosa escuro da logo */
+    --color-secondary: #6497d4; /* Azul claro da logo */
+    --color-secondary-dark: #144a84; /* Azul escuro da logo */
     --color-text-primary: #ffffff;
     --color-text-secondary: #6698D0;
     --color-text-light: rgb(172, 172, 173, 0.6);
@@ -29,6 +30,10 @@
 
 .btn-primary:focus, .btn-primary.focus {
     outline: 0!important;
+}
+
+.block {
+    border-top: 7px solid var(--color-primary)!important;
 }
 
 /* Fragmento de CSS inserido dentro do tema FORDSON > COLORS

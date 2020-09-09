@@ -1,0 +1,33 @@
+div.container-fluid, div.col-md-12{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.market-tile {
+    display: none!important;
+}
+
+section.d-print-none {
+    padding: 0 1rem!important;
+}
+
+.block {
+    border-top: 7px solid var(--color-primary);
+}
+
+@media (min-width:1200px) {
+    #region-main-box {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #region-main.has-blocks {
+        width: 80vw;
+    }
+
+    section.d-print-none {
+        margin: 0 1rem!important;
+        width: 15vw;
+        padding: 0!important;
+    }
+}

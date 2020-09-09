@@ -1,10 +1,23 @@
-/* Configurações do header fixo */
+/* Configurações do header fixo 
+IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPEARENCE > ADDITIONAL HTML*/
 .navbar {
     background-color: var(--color-background)!important;
 }
 
 .fixed-top {
     position: relative;
+}
+
+@media (max-width:380px) {
+    .d-none img {
+        height: 1rem;
+    }
+
+    div.siteadminlink.nav-item.nav-link {
+        position: absolute;
+        right: 0rem;
+        top: 5rem;
+    }
 }
 
 @media (max-width:430px) {
@@ -38,6 +51,12 @@
     .nav.navbar-nav.ml-auto {
         align-items: center;
     }
+
+    div.siteadminlink.nav-item.nav-link {
+        position: absolute;
+        right: 0rem;
+        top: 5rem;
+    }
 }
 
 @media (max-width:1199px) {
@@ -67,6 +86,12 @@
         align-items: center;
     }
 
+    div.siteadminlink.nav-item.nav-link {
+        position: absolute;
+        right: 0rem;
+        top: 5rem;
+    }
+
 }
 
 @media (min-width:1200px) {
@@ -75,6 +100,10 @@
         height: auto;
         display:block;
         max-height: none;
+    }
+
+    div.coursecontrols.nav-item.d-flex {
+        justify-items: right;
     }
 
     .navbar-brand.has-logo {
@@ -93,7 +122,7 @@
     }
 
     .navbar-nav.d-none.d-md-flex {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         margin-bottom: 1rem;
         margin-top: 1.5rem;
     }
@@ -114,7 +143,7 @@
     }
 
     .navbar-expand .navbar-nav li + li {
-        border-left: 1px solid var(--color-secondary);
+        border-left: 1px solid var(--color-text-light);
     }
 
     .dropdown-toggle::after {
@@ -129,7 +158,7 @@
         position: absolute;
         border: 1px solid var(--color-secondary);
         align-items: center;
-        border-radius: 3%;
+        border-radius: 3px;
         padding: 0.5rem;
         right: 0.5rem;
         top: 0;

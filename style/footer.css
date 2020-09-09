@@ -1,7 +1,8 @@
-/* Configurações do footer fixo */
+/* Configurações do footer fixo 
+IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPEARENCE > ADDITIONAL HTML*/
 
 #page-footer {
-    background-color: var(--color-background)!important;
+    background-color: var(--color-secondary-dark)!important;
     font-size: 0.8rem;
     padding-top: 1rem;
 }
@@ -27,8 +28,8 @@
     padding: 0 1rem;
 }
 
-.text-dark {
-    color: var(--color-text-dark)!important;
+.text-dark, .brandbox h3 {
+    color: var(--color-background)!important;
 }
 
 .footercontact {
@@ -39,16 +40,12 @@
         padding-left: 0;
     }
 
-.brandbox h3 {
-        color: var(--color-text-secondary)
-    }
-
 .pb-3, .py-3, .pt-3, .py-3 {
         padding: 2rem 0 0 0!important;
     }
 
 #divFooter {
-        background-color: var(--color-footer-background);
+        background-color: var(--color-background);
         display:flex;
         align-items: center;
         margin-top: 1rem;
@@ -66,6 +63,7 @@
 }
 #divContent {
         padding: 1rem;
+        color: var(--color-secondary-dark);
 }
 
 #divBackTop {
@@ -80,7 +78,7 @@
     position: relative;
     bottom: 0;
     right: 0;
-    background-color: var(--color-footer-background);
+    background-color: var(--color-background);
     border: none;
     color: var(--color-text-dark)!important;
     opacity: 1;
@@ -123,7 +121,7 @@
         }
     
         #page-footer a {
-            color: var(--color-text-dark);
+            color: var(--color-text-light);
             text-decoration: none;
         }
     
