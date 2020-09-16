@@ -9,14 +9,11 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
     --color-primary: #d65c97; /* Rosa claro da logo */
     --color-primary-dark: #cc5890; /* Rosa escuro da logo */
     --color-secondary: #6497d4; /* Azul claro da logo */
-    --color-secondary-dark: #144a84; /* Azul escuro da logo */
+    --color-secondary-dark: #2164b2; /* Azul escuro da logo */
     --color-text-primary: #ffffff;
     --color-text-secondary: #6698D0;
     --color-text-light: rgb(172, 172, 173, 0.6);
     --color-text-dark: #3d3d3d;
-    --image-background-header: url('https://sysmanager-dev.outsystemscloud.com/UIPattern/img/BackgroundAHeader.png?19377');
-    --image-footer-sys: url('https://www.sysmanager.com.br/wp-content/uploads/2019/02/Logo_NovoSite-300x89.png');
-    --image-logo: url('https://academy.sysmanager.com.br/pluginfile.php/1/core_admin/logocompact/300x300/1598288179/logo.png');
 }
 
 @font-face {

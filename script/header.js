@@ -36,6 +36,14 @@ let divUser = document.querySelector('.nav.navbar-nav.ml-auto');
 
 divUser.appendChild(adminButton);
 
+//Insere a imagem tratada no cabeçalho e ajusta os elementos
+if (document.querySelector('div.usermenu').querySelector('span.userbutton') !=null) {
+    let navbar = document.querySelector('nav.navbar');
+    navbar.classList.add('loggedNavbar');
+    document.querySelector('ul.navbar-nav.d-none.d-md-flex').classList.add('loggedDisplayNone');
+    document.querySelector('nav.navbar .logo img').classList.add('loggedDisplayNone');
+    document.querySelector('a.navbar-brand.has-logo').classList.add('linkNavbar'); 
+}
 
 console.log('Script de header executado com sucesso');
 

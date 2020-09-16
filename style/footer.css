@@ -1,180 +1,98 @@
-/* Configurações do footer fixo 
-IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPEARENCE > ADDITIONAL HTML*/
-
 #page-footer {
-    background-color: var(--color-secondary-dark)!important;
-    font-size: 0.8rem;
-    padding-top: 1rem;
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-primary) !important;
+    padding-top: 2rem!important;
 }
 
-#page-footer .container {
-    max-width: 90vw;
-    margin-bottom: 3rem;
+#page-footer h3 {
+    text-align: center;
+    font-size: 1.4rem!important;
 }
 
-.sitelink, .helplink, .tool_dataprivacy, .homelink {
+#page-footer div.col-md-8, #page-footer div.col-md-4 {
+    padding: 0!important;
+}
+
+#page-footer div.col-md-4 {
+    margin-top: 2rem;
+}
+
+#divFooter, .tool_dataprivacy, .sitelink {
     display: none!important;
 }
 
-.row {
-    justify-content: space-between;
+div.text_to_html p {
+    text-align: justify;
+    line-height: 1.2rem;
 }
 
-.col-md-8 {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5rem;
-    padding: 0 1rem;
+.brandbox ul {
+    padding: 0;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
-.text-dark, .brandbox h3 {
-    color: var(--color-background)!important;
+.footercontact li i {
+    color: var(--color-primary);
+    margin-right: 0.3rem;
+    display: block;
+    font-size: 2rem;    
 }
 
-.footercontact {
-    padding-left: 0;
+.footercontact li + li {
+    margin-top: 0.7rem;
 }
 
-.footercontact i {
-        padding-left: 0;
+ul.list-unstyled.pt-3 {
+    padding: 0!important;
+    font-size: 1.4rem;
+}
+
+.list-unstyled.pt-3 > li {
+    color: var(--color-primary);
+}
+
+@media (min-width: 1200px) {
+    #region-main {
+        border-bottom: 0 !important;
     }
 
-.pb-3, .py-3, .pt-3, .py-3 {
-        padding: 2rem 0 0 0!important;
+    #page-footer {
+        background-color: unset !important;
+        background-image: url('/sys-academy/images/layout-images/background-footer.png');
+        background-repeat: no-repeat;
+        padding: 2rem 0!important;
+        background-size: cover;
     }
 
-#divFooter {
-        background-color: var(--color-background);
-        display:flex;
-        align-items: center;
-        margin-top: 1rem;
-        height: 4rem;
-}
-
-#divMedium {
-        display: flex;
-        justify-content: space-between;
-        width:100%;
-        padding: 0 1rem;
-        margin: 0 auto;
-        max-width: 90vw;
-        align-items: center;
-}
-#divContent {
-        padding: 1rem;
-        color: var(--color-secondary-dark);
-}
-
-#divBackTop {
-        margin-right: 1rem;
-}
-
-#divBackTop h1 {
-        display: none;
-    }
-
-#back-to-top {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    background-color: var(--color-background);
-    border: none;
-    color: var(--color-text-dark)!important;
-    opacity: 1;
-}
-
-.logininfo a {
-    color: var(--color-secondary)!important;
-}
-
-.theme_switch_link {
-    display:none!important;
-}
-
-
-@media (max-width:1199px) {
-        /* Configurações do footer fixo */
-        #page-footer {
-            font-size: 1rem;
-            padding-top: 0!important;
-            border-top: 1px solid var(--color-text-light);
-        }
-    
-        #divMedium {
-            max-width: 100vw!important;
-        }
-    
-        .container {
-            padding: 0 1rem;
-            margin-bottom: 0!important;
-            max-width: 100vw!important;
-        }
-
-        .col-md-8 {
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-        }
-    
-        .col-md-8, .col-md-4 {
-            padding: 0!important;
-        }
-    
-        #page-footer a {
-            color: var(--color-text-light);
-            text-decoration: none;
-        }
-    
-        #page-footer nav li {
-            color: none;    
-        }
-        
-        .footercontact li i {
-            margin: 0 50%;
-            display:block;
-            font-size: 2rem;
-        }
-
-        .brandbox {
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        .brandbox li i {
-            margin: 1rem 0;
-        }
-
-        .brandbox li i {
-            display: block;
-            font-size: 2rem;
-        }
-
-        .list-unstyled.pt-3 li {
-            font-weight: bold;
-        }
-
-        .list-unstyled.pt-3 li ul li {
-            font-weight: normal;
-        }
-
-        .text_to_html p {
-            text-align: justify;
-        }
-}
-
-@media (min-width:1200px) {
-
-    .footercontact li {
-        margin-bottom: 0.5rem;
-        display: flex;
-        align-items: center;
+    #page-footer div.col-md-4 {
+        padding: 0!important;
     }
 
     .footercontact li i {
-        margin-right: 0.5rem;
-        font-size: 1.3rem;
+        display: initial;
+        font-size: 1rem;
     }
+
+    #page-footer div.col-md-4 {
+        margin-top: 0;
+    }
+
+    #page-footer .row {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    #page-footer h3 {
+        text-align: left;
+    }
+
+    div.text_to_html p {
+        width: 80%;
+    }
+
+    .brandbox ul {
+        text-align: left;
+    }
+
+
 }
-
-
-    

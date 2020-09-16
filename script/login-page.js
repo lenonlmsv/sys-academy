@@ -1,20 +1,37 @@
-//Organiza os itens do login
-let TitleH1 = document.querySelector('div.card-title.text-xs-center h1');
-document.querySelector('div.card-title.text-xs-center hr').outerHTML = "";
-TitleH1.outerHTML = "";
-
-let TitleImg = document.querySelector('div.card-title.text-xs-center');
+let imgDiv = document.createElement('div');
+imgDiv.id = 'imgDiv';
 let imgSys = document.createElement('img');
-imgSys.setAttribute('class', 'imgSys');
-//imgSys.setAttribute('src', 'http://18.206.191.3/sys-academy/images/logo.png'); // CAMINHO EM PRODUÇÃO /sys-academy/images/logo.png'
-imgSys.setAttribute('alt', 'Logo Sys Academy');
+imgSys.id = 'imgSys';
+imgSys.setAttribute('src','/sys-academy/images/logo-s.png');
+let textNode = "Login Sys Manager";
 
-TitleImg.appendChild(imgSys);
+imgDiv.appendChild(imgSys);
+imgDiv.append(textNode);
+
+
+$('a.btn.btn-secondary.btn-block').html('');
+$('a.btn.btn-secondary.btn-block').append(imgDiv);
+
+
+/* Reposiciona o título de 'novidade' */
+$('#fordsonlogin').prepend($('#newsTitle'));
+
+
+console.log('Script da página de login executado com sucesso')
+
+
+//Organiza os itens do login
+/*let TitleH1 = document.querySelector('div.card-block h1');
+TitleH1.outerHTML = "";
+let TitleImg = document.querySelector('div.card-block');
+let divContentImg = document.createElement('div');
+divContentImg.id = 'divImgSys';
+divContentImg.appendChild(imgSys);
+TitleImg.insertBefore(divContentImg, TitleImg.children[0]);
 
 let BtnSys = document.querySelector('.potentialidp a img').cloneNode(true);
 let LinkPosition = document.querySelector('.potentialidp a')
 let LinkLogin = document.querySelector('.potentialidp a').textContent = "";
 LinkPosition.appendChild(BtnSys);   
-LinkPosition.append("Login integrado Sys Manager");
+LinkPosition.append("Login integrado Sys Manager");*/
 
-console.log('Script da página de login executado com sucesso')

@@ -1,16 +1,24 @@
 /* Configurações do header fixo 
 IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPEARENCE > ADDITIONAL HTML*/
-.navbar {
-    background-color: var(--color-background)!important;
-}
-
 .fixed-top {
     position: relative;
+}
+
+/* Classe para acrescentar a imagem no cabeçalho */
+.loggedNavbar {
+    background-image: url('/sys-academy/images/moodle-top-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 @media (max-width:380px) {
     .d-none img {
         height: 1rem;
+    }
+
+    .loggedNavbar {
+        background-image: unset!important;
     }
 
     div.siteadminlink.nav-item.nav-link {
@@ -21,8 +29,16 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
 }
 
 @media (max-width:430px) {
+    .navbar{
+        min-height: unset!important;
+    }
+
     nav.navbar .logo img {
         margin-left: 0.5rem;
+    }
+
+    .loggedNavbar {
+        background-image: unset!important;
     }
 
     button.btn.nav-link.float-sm-left.mr-1.btn-secondary {
@@ -65,6 +81,14 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
         display:flex!important;
         justify-content:space-between;
     }
+
+    .navbar{
+        min-height: unset!important;
+    }
+
+    .loggedNavbar {
+        background-image: unset!important;
+    }
         
     .d-none img {
         height:1.5rem;
@@ -99,7 +123,12 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
     .navbar {
         height: auto;
         display:block;
-        max-height: none;
+        max-height: 15rem;
+    }
+
+    .linkNavbar {
+        height: 100px!important;
+        width: 40rem!important;
     }
 
     div.coursecontrols.nav-item.d-flex {
@@ -179,5 +208,9 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
 
     .usermenu {
         margin-left: 0.3rem;
+    }
+
+    .loggedDisplayNone {
+        display: none!important;
     }
 }

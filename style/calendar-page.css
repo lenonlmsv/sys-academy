@@ -6,13 +6,17 @@
     font-size: 0.9rem;
 }
 
-@media (min-width:1200) {
-    section.block.block_fake.card.mb-3 {
-        width: 15vw; 
+@media (min-width:1200px) {
+    #region-main-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    section.hidden-print {
+        width: 15vw!important; 
         margin-right: 1rem;
     }
 
-    #region-main.has-blocks-main {
-        width: 80vw;
+    #region-main.has-blocks-main.mb-3 {
+        width: 80vw!important;
     }
 }

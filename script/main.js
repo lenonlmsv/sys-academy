@@ -8,10 +8,10 @@ if (pageTitleControler.includes('page-site-index')) {
     homePageCSS.href = '/sys-academy/style/home-page.css';
     homePageCSS.rel = 'stylesheet';
     document.head.appendChild(homePageCSS);
-    let homePageCSSPartial = document.createElement('link');
+    /*let homePageCSSPartial = document.createElement('link');
     homePageCSSPartial.href = '/sys-academy/style/home-page-partial-html.css';
     homePageCSSPartial.rel = 'stylesheet';
-    document.head.appendChild(homePageCSSPartial);
+    document.head.appendChild(homePageCSSPartial);*/
     //Insere o JS correspondente
     let homePageScript = document.createElement('script');
     homePageScript.type = 'text/javascript';
@@ -58,6 +58,7 @@ else if (pageTitleControler.includes('page-calendar-view')) {
     calendarPageCSS.href = '/sys-academy/style/calendar-page.css';
     calendarPageCSS.rel = 'stylesheet';
     document.head.appendChild(calendarPageCSS);
+    console.log('Script de página de calendário executado com sucesso')
     //Insere o JS correspondente
     /*let calendarPageScript = document.createElement('script');
     calendarPageScript.type = 'text/javascript';

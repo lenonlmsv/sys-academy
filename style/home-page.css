@@ -1,296 +1,340 @@
-#frontpage-available-course-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#region-main {
+    overflow: hidden;
+    padding: 0 1rem!important
 }
 
-/* Configuração da área de categorias */
-#buttonCourses {
-    position: absolute;
-    right: 0;
-    bottom: 2rem;
+#demo {
+    width: 100vw;
+    margin: 0 -1rem;
 }
 
-.subcategories {
-    display: flex;
-    justify-content: center!important;
-    padding: 0 10rem;
-    position: relative; 
+div.container-fluid, div.col-md-12 {
+    padding: 0 !important;
 }
 
-.category.notloaded + div.category.notloaded {
-    margin-left: 200px;
+/* Área de categoria de cursos */
+#frontpage-category-names {
+    background: var(--color-secondary-dark);
+    margin: 0 -1rem!important;
+    padding: 1rem 0;
 }
 
-hr.fade-line {
-    border: 0;
-    height: 2px;
-    margin: 1.5px 0;
-    position:relative;
-    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgb(172, 172, 173, 1) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%);
+#frontpage-category-names > hr, span.numberofcourse, #buttonCourses, .market-tile a.btn.btn-primary {
+    display: none!important; /* Concentra todos os display none */
 }
 
-img.imgCategory {
-    height: 15rem;
-    max-height: 400px;
-    box-shadow: 0rem 0rem 2rem var(--color-text-light);
+#frontpage-category-names > h2 {
+    color: var(--color-text-primary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
 }
 
-.course_category_tree .category > .info > .categoryname {
-    background-image: none;
+.imgCategory {
+    width: 100%;
+    max-height: 300px;
 }
 
 h3.categoryname.aabtn {
-    display: ruby-base;
-    border-radius: 5px;
+    background-image: none !important;
     color: var(--color-text-primary);
-    margin: 0.3rem 2rem 0 0 !important;
+    justify-content: right!important;
+    display: flex!important;
 }
 
-h3.categoryname.aabtn a{
+h3.categoryname.aabtn a {
     color: var(--color-text-primary);
+    border-bottom: 3px solid var(--color-primary-dark);
 }
 
-hr.line-fade::before {
-    content: "";
-    display: block;
-    border-top: solid 1px #f9f9f9;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
+h3.categoryname.aabtn a::before {
+    color: var(--color-primary-dark);
+    content: "○ ";
 }
 
-#region-main {
-    padding: 0 5rem!important;
-    overflow-x: hidden;
-    max-width: 2300px;
-    border: none;
-    width: 100vw;
-}
-
-#region-main-box {
+/* Área da mensagem de boas vindas */
+#TextHomeContent {
     display: flex;
-    justify-content: center;
-}
-
-.courses.frontpage-course-list-all {
-    margin-top: 1rem;
-}
-
-.course-title h4 {
-    background: var(--color-secondary);
-    display: initial;
-    color: var(--color-text-dark);
-    padding: 0.2rem 4rem 0.2rem 0.2rem;
-    font-size: 1rem;
-}
-
-.course-summary {
-    margin: 0 !important;
-    padding: 0 0.5rem!important;
-    height: auto!important;
-}
-
-.class-box {
-    height: auto!important;
-    border: 0!important;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 0;
 }
 
-.course-image-view {
-    height: 15rem!important;
-    background-size: cover!important;
-}
-
-#frontpage-category-names {
-    display:flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    position: relative;
-}
-
-#frontpage-available-course-list h2, #mktTitle, #frontpage-category-names > h2 {
-    align-self: center!important;
-    color: var(--color-secondary);
-    font-weight: normal;
-    font-size: 3rem
-}
-
-.courseimagecontainer {
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.btn {
-    border-radius: 5px;
-}
-
-.btn-primary {
-    background-color: var(--color-background);
-    color: var(--color-text-dark);
-    border: 1px solid var(--color-text-dark);
-}
-
-.headerlogo img {
-    padding: 0!important;
-}
-
-#coursesearch {
-    margin-left: 2rem;
-}
-
-#shortsearchbox {
-    width: 30vw;
-    border-radius: 3px;
-}
-
-.markettiles {
-    margin: 3rem -1rem!important;
-    background-color: var(--color-text-light);
-    padding: 0 1rem;
-}
-
-.market-tile {
-    background-color: transparent!important;
-    border-top: 0!important;
-    margin-top: -3rem;
-    padding: 0!important;
-}
-
-.market-tile a {
-    background-color: transparent;
-    border: 0;
-    text-align: left;
-}
-
-.market-tile a:hover {
-    background-color: var(--color-secondary);
-}
-
-.container-fluid .col-md-4 {
-    position: relative;
-}
-
-.card-title {
-    margin-bottom: -2rem;
-    background: var(--color-secondary);
-    padding: .5rem;
-    border-radius: 5px;
-    z-index: 1000;
-    position: relative;
-    font-size: 1.5rem;
-    display: table;
-    color: var(--color-text-primary);
-}
-
-.card-body {
-    padding:    0.5rem 1.25rem;
-}
-
-.marketcontent {
-    border-radius: 3px;
-    height: 12rem;
-}
-
-.fpwonderbox {
-    margin-bottom: 0!important;
-}
-
-div.box.py-3.mdl-align {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
+#WelcomeH1 {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-@media (max-width:1199px) {
-/* Corpo da homepage */
-    #region-main {
-        overflow-x: hidden!important;
-    }
+#welcomeText {
+    font-size: 1rem;
+    text-align: justify;
+    width: 90vw;
+}
 
-    #page-header .card, div.col-12.pt-3.pb-3, div.collapsible-actions {  /* Concentram todos os display none*/
+#TextHomeContent h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 90vw;
+    color: var(--color-secondary);
+    align-self: center;
+}
+
+div.fp-blocks,.jsenabled .collapsible-actions {
     display: none!important;
-    }
+}
 
-    #page {
-        display: flex !important;
-        justify-content: center;
-        margin-top: 0;
-    }
+/* Área dos instrutores */
+#instructorsArea {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    color: var(--color-secondary-dark);
+    font-weight: bold;
+}
 
+#instuctorArea {
+    border: 0;
+}
 
-    #learningcontent {
-        margin-top: 0!important;
-        align-self: center;
-        width:90vw;
-    }
+div.contentImg {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
-    #page-header .pb-3 {
-        padding-top: 0;
-    }
+div.divImageInstructor {
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
 
-    #region-main, div.container-fluid, div.col-md-12, div.col-12.pt-3.pb-3 {
-        border: none!important;
-        padding: 0!important;
-    }
+div.divImageInstructor img {
+    margin: 0;
+    width: 100%;
+}
 
-    #shortsearchbox {
-        width: 50vw;
-    }
+/* Área de marketing */
+div.markettiles {
+    margin: 1rem 0!important;
+}
 
-    div.main .box.py-3.mdl-align {
-        padding: 0!important;
-    }
+#mktDiv {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid var(--color-primary-dark);
+    border-bottom: 3px solid var(--color-primary-dark);
+    margin: 0 -1rem;
+}
 
-    .row .col-md-4 + .col-md-4 {
-        margin-top: 2rem;
-    }
+#mktDiv h2 {
+    margin: 0!important;
+    font-weight: bold;
+    color: var(--color-secondary-dark);
+}
 
-    #frontpage-available-course-list h2 {
-        margin-bottom: 0;
-    }
+div.market-tile {
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0!important;
+}
 
-    .course-image-view {
-        height: 10rem!important;
-    }
+h3.card-title {
+    margin-bottom: 0!important;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+}
 
-    #coursesearch {
+.card-title {
+    padding: 0.5rem;
+}
+
+.marketing1image,.marketing2image,.marketing3image,.marketing4image,.marketing5image,.marketing6image,.marketing7image,
+.marketing8image,.marketing9image { /* Total de imagens que podem ser usadas no marketing area */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.marketcontent {
+    height: 15rem;
+    max-height: 300px;
+    margin: 0!important;
+}
+
+.titleMarketing h1 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.textArea h2 {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+#region-main div.col-md-4 {
+    margin-bottom: 1.5rem;
+}
+
+h3.categoryname.aabtn {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 1200px) {
+    #demo {
+        width: auto;
         margin: 0;
     }
-
-    #frontpage-available-course-list h2, #mktTitle, 
-    #frontpage-category-names > h2 {
-        font-size: 2.3rem;
-    }
-
-    #mktTitle {
-        margin-bottom: 1rem;
-    }
-
-    .markettiles {
-        background-color: transparent;
-        margin: 3rem -1rem 0 -1rem !important;
-    }
     
-    div.col-md-4 + div.col-md-4 {
-        margin-top: 3rem !important;
+    #region-main-box {
+        display: flex;
+        justify-content: center;
     }
 
-    .category.notloaded + div.category.notloaded {
-        margin-left: 0!important;
+    #region-main {
+        padding: 0!important;
+        max-width: 2900px;
+        border: 0!important;
     }
 
-    div.category.notloaded {
+    #page-header .col-12.pt-3.pb-3 {
+        padding: 0!important;
+    }
+
+    /* Área de boas vindas */
+    #TextHomeContent {
+        background-image: url('/sys-academy/images/layout-images/background-welcome.jpg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-y: top;
+        background-position-x: right;
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0;
     }
 
-    h3.categoryname.aabtn {
-        margin: 1rem 0 !important;
+    #frontpage-category-names > h2 {
+        font-size: 3rem;
     }
 
+    #frontpage-category-names {
+        background-color: unset;
+        background-image: url('/sys-academy/images/layout-images/backgroung-torres.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 27rem;
+        padding-top: 2rem;
+    }
+
+    #welcomeText {
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+        width: 70vw;
+        align-self: center;
+        text-align: center;
+    }
+
+    #TextHomeContent h3 {
+        font-weight: normal;
+        font-size: 1.5rem;
+        width: 70vw;
+        align-self: center;
+        text-align: center;
+    }
+
+    #WelcomeH1 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    /*Área de categorias de cursos */
+
+    .category.notloaded + .category.notloaded {
+        margin-left: 4rem;
+    }
+
+    div.subcategories {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.subcategories img {
+        height: 15rem;
+    }
+
+    /* Área de instrutores */
+    #instructorsArea {
+        font-size: 3rem;
+        justify-content: left;
+    }
+    
+    #instuctorArea {
+        padding: 0 10rem;
+        margin-bottom: 4rem;
+    }
+
+    div.contentImg {
+        flex-direction: initial;
+        justify-content: space-between;
+        margin: 0 -2rem;
+    }
+
+    div.divImageInstructor {
+        width: auto;
+        max-width: 300px;
+    }
+
+    /* Área de marketing */
+    #mktDiv {
+        border-top: 0;
+        border-bottom: 0;
+        padding: 0 10rem;
+        text-align: center;
+    }
+
+    #mktDiv h2 {
+        font-size: 3rem;
+        border-top: 3px solid var(--color-primary-dark);
+        border-bottom: 3px solid var(--color-primary-dark);
+        width: 100%;
+    }
+
+    div.markettiles {
+        padding: 0 10rem;
+    }
+
+    h3.card-title {
+        display: inline;
+        margin-left: 0.5rem;
+    }
+
+    .card-title {
+        padding: 0.5rem 40% 0.5rem 0.5rem;
+    }
+
+    .marketcontent {
+        height: 10rem;
+        margin-top: 0.5rem !important;
+    }
+
+    .marketing1image,.marketing2image,.marketing3image,.marketing4image,.marketing5image,.marketing6image,.marketing7image, .marketing8image,.marketing9image { /* Total de imagens que podem ser usadas no marketing area */
+        background-size: 100% 100%;
+        max-width: 400px;
+        width: auto;
+        height: 15rem;
+    }
+
+    div.container-fluid {
+        margin-top: 0rem!important;
+    }
 }
