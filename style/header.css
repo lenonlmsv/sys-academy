@@ -160,6 +160,10 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
         color: var(--color-text-secondary);
     }
 
+    .dropdown.nav-item a, .nav-item a {
+        transition: 0.2s;
+    }
+
     .dropdown.nav-item a:hover, .nav-item a:hover {
         color: var(--color-secondary-dark) !important;
         font-weight: bold;

@@ -45,11 +45,18 @@ h3.categoryname.aabtn {
 h3.categoryname.aabtn a {
     color: var(--color-text-primary);
     border-bottom: 3px solid var(--color-primary-dark);
+    transition: 0.2s;
 }
 
 h3.categoryname.aabtn a::before {
     color: var(--color-primary-dark);
     content: "○ ";
+}
+
+h3.categoryname.aabtn a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    border-color: var(--color-secondary);
 }
 
 /* Área da mensagem de boas vindas */
@@ -117,6 +124,12 @@ div.divImageInstructor {
 div.divImageInstructor img {
     margin: 0;
     width: 100%;
+    transition: 0.2s;
+}
+
+div.divImageInstructor img:hover {
+    width: 110%;
+
 }
 
 /* Área de marketing */
@@ -142,6 +155,10 @@ div.market-tile {
     border: 0 !important;
     margin: 0 !important;
     padding: 0!important;
+}
+
+.market-tile {
+    background-color: var(--color-background)!important;
 }
 
 h3.card-title {
@@ -183,6 +200,25 @@ h3.card-title {
 
 h3.categoryname.aabtn {
     font-size: 1.4rem;
+}
+
+.indicates-required {
+    display: none;
+}
+
+div#mc_embed_signup_scroll h2 {
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.clear {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+input#mc-embedded-subscribe {
+    background-color: var(--color-secondary)!important;
 }
 
 @media (min-width: 1200px) {
@@ -270,6 +306,14 @@ h3.categoryname.aabtn {
 
     div.subcategories img {
         height: 15rem;
+        transition: 0.4s;
+        position: relative;
+    }
+
+    div.subcategories img:hover {
+        position: sticky;
+        z-index: 1000;
+        height: 18rem;
     }
 
     /* Área de instrutores */
@@ -325,6 +369,7 @@ h3.categoryname.aabtn {
     .marketcontent {
         height: 10rem;
         margin-top: 0.5rem !important;
+        transition: 0.2s;
     }
 
     .marketing1image,.marketing2image,.marketing3image,.marketing4image,.marketing5image,.marketing6image,.marketing7image, .marketing8image,.marketing9image { /* Total de imagens que podem ser usadas no marketing area */
@@ -332,6 +377,11 @@ h3.categoryname.aabtn {
         max-width: 400px;
         width: auto;
         height: 15rem;
+        margin: 1rem auto !important;
+    }
+
+    .marketing1image:hover,.marketing2image:hover,.marketing3image:hover,.marketing4image:hover,.marketing5image:hover,.marketing6image:hover,.marketing7image:hover, .marketing8image:hover,.marketing9image:hover {
+        opacity: 70%;
     }
 
     div.container-fluid {

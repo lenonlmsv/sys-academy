@@ -1,8 +1,8 @@
 //Seleciona o estilo a ser importado para a página
 let pageTitleControler = document.querySelector('body').id;
 
-//Insere os elementos na home
-if (pageTitleControler.includes('page-site-index')) {
+//Insere os elementos na home sem estar logado
+if (pageTitleControler.includes('page-site-index') && ($('div.usermenu span.login').text().includes('ainda não se identificou') || $('div.usermenu span.login').text().includes('not logged'))) {
     //Insere o CSS correspondente
     let homePageCSS = document.createElement('link');
     homePageCSS.href = '/sys-academy/style/home-page.css';
@@ -21,6 +21,16 @@ if (pageTitleControler.includes('page-site-index')) {
     homePageScriptPartial.type = 'text/javascript';
     homePageScriptPartial.src = '/sys-academy/script/home-page-partial.js'
     document.body.appendChild(homePageScriptPartial);
+    console.log('Script page-site-index (sem login) executado')
+}
+
+else if (pageTitleControler.includes('page-site-index') && document.querySelector('div.usermenu').querySelector('span.userbutton') != null) {
+    /* Remove elementos quando logado */
+    $('#frontpage-available-course-list, div.markettiles, #mc_embed_signup').css('display','none');
+    
+    const newLocal = window.onload = () => { $('#mc_embed_signup').css('display', 'none'); };
+    newLocal();
+    console.log('Script page-site-index (logado) executado')  
 }
 
 //Insere os elementos na página de login

@@ -9,13 +9,19 @@ imgDiv.appendChild(imgSys);
 imgDiv.append(textNode);
 
 
-$('a.btn.btn-secondary.btn-block').html('');
-$('a.btn.btn-secondary.btn-block').append(imgDiv);
+//$('a.btn.btn-secondary.btn-block').append(imgDiv);
 
 
 /* Reposiciona o título de 'novidade' */
 $('#fordsonlogin').prepend($('#newsTitle'));
 
+/* Cria mensagem de login */
+let imgLogin = document.querySelector('.btn.btn-secondary.btn-block img').cloneNode(true);
+let nodeText = "Login Sys Academy";
+let buttonLogin = document.querySelectorAll('.btn.btn-secondary.btn-block')
+buttonLogin[1].innerText = ""
+buttonLogin[1].appendChild(imgLogin);
+buttonLogin[1].append(nodeText);
 
 console.log('Script da página de login executado com sucesso')
 

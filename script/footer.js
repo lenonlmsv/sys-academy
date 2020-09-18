@@ -30,7 +30,7 @@ window.onload = function() {
 
 //muda os ícones 
 document.querySelector('i.fa.fa-globe').setAttribute('class','fa fa-map-marker');
-document.querySelector('i.fa.fa-mobile-phone').setAttribute('class','fa fa-phone');
+document.querySelector('i.fa.fa-mobile-phone').setAttribute('class','fa fa-phone');      
 
 console.log("Script de footer executado com sucesso.")
 

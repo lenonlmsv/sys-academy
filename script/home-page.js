@@ -89,4 +89,8 @@ for (i = 0; i < primeDivMktg.length; i++) {
 document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.border = "1px solid gray";
 document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.borderRadius = "10px";
 
+/* Move o forms para o local correto */
+var c = document.querySelector('#signupForm');
+document.querySelectorAll('.markettiles .col-md-4')[1].appendChild(c);
+
 console.log("Script da homepage executado com sucesso")

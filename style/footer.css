@@ -1,5 +1,5 @@
 #page-footer {
-    background-color: var(--color-secondary-dark);
+    background-color: var(--color-secondary-dark)!important;
     color: var(--color-text-primary) !important;
     padding-top: 2rem!important;
 }
@@ -17,7 +17,7 @@
     margin-top: 2rem;
 }
 
-#divFooter, .tool_dataprivacy, .sitelink {
+#divFooter, .tool_dataprivacy, .sitelink, .homelink {
     display: none!important;
 }
 
@@ -59,10 +59,19 @@ ul.list-unstyled.pt-3 {
 
     #page-footer {
         background-color: unset !important;
-        background-image: url('/sys-academy/images/layout-images/background-footer.png');
+        background-image: var(--image-footer);
         background-repeat: no-repeat;
         padding: 2rem 0!important;
         background-size: cover;
+        height: 30rem;
+    }
+
+    #page-footer .container {
+        position: absolute;
+        margin: 0 auto;
+        bottom: 2rem;
+        right: 0;
+        left: 0;
     }
 
     #page-footer div.col-md-4 {

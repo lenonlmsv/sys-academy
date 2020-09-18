@@ -1,8 +1,10 @@
 Projeto feito na SYS MANAGER para alterações visuais de projeto para academia de ensino EAD, construída no MOODLE em PHP.
 
-Contempla imagens, estilo e elementos de HTML.
+Contempla arquivos JS, HTML e CSS para redefinição de estilo.
 
-Caminhos específicos
+----------------
+
+Caminhos específicos dentro da plataforma MOODLE
 
 DASHBOARD > SITE ADMINISTRATION > APPEARENCE > THEME > FORDSON > CUSTOM IMAGE SETTINGS > HEADER LOGO
 
