@@ -64,17 +64,6 @@ for (i=0; i < divsToCategories.length; i++) {
     }
 }
 
-//Reposiciona o botão
-let buttonCourse = document.getElementById('buttonCourses');
-document.querySelector('div.course_category_tree.clearfix.frontpage-category-names').appendChild(buttonCourse);
-
-//Retira o menu expansível das telas de home e login
-let pageName = document.querySelector('body').id;
-let unloggedUser = document.querySelector('span.login').innerHTML;
-if (pageName.includes('page-site-index' || 'page-course-index-category' && unloggedUser.includes('You are not logged in'))) {
-    document.querySelector('div.d-inline-block.mr-3').outerHTML = "";
-}
-
 /* Reposiciona itens dentro da área de marketing */
 let contentsDivMkt = document.getElementById('page-content').querySelectorAll('div.text_to_html');
 let primeDivMktg = document.getElementById('page-content').querySelectorAll('div.market-tile');
@@ -89,8 +78,15 @@ for (i = 0; i < primeDivMktg.length; i++) {
 document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.border = "1px solid gray";
 document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.borderRadius = "10px";
 
-/* Move o forms para o local correto */
-var c = document.querySelector('#signupForm');
-document.querySelectorAll('.markettiles .col-md-4')[1].appendChild(c);
+//Reposiciona o botão
+let buttonCourse = document.getElementById('buttonCourses');
+document.querySelector('div.course_category_tree.clearfix.frontpage-category-names').appendChild(buttonCourse);
+
+//Retira o menu expansível das telas de home e login
+let pageName = document.querySelector('body').id;
+let unloggedUser = document.querySelector('span.login').innerHTML;
+if (pageName.includes('page-site-index' || 'page-course-index-category' && unloggedUser.includes('You are not logged in'))) {
+    document.querySelector('div.d-inline-block.mr-3').outerHTML = "";
+}
 
 console.log("Script da homepage executado com sucesso")

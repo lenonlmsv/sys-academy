@@ -19,7 +19,6 @@ DASHBOARD > SITE ADMINISTRATION > APPEARENCE > THEME > FORDSON > MARKETING SPOT
 *ITENS DO MENU DEFINIDOS COMO PADRÃO*
 
 Cursos
-- On Boarding | /course/index.php?categoryid=2
 - Tecnologia | /course/index.php?categoryid=3
 - Gestão | /course/index.php?categoryid=4
 
@@ -30,8 +29,8 @@ Biblioteca
 - Buscar cursos| /course/search.php
 
 Auditório
-- Todos os cursos| /course/
-- Buscar cursos| /course/search.php
+- Todos os cursos | /course/
+- Buscar cursos | /course/search.php
 
 Incubadora
 

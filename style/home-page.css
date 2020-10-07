@@ -137,6 +137,14 @@ div.markettiles {
     margin: 1rem 0!important;
 }
 
+.textArea b {
+    font-weight: bold;
+}
+
+.textArea b {
+    font-weight: bold;
+}
+
 #mktDiv {
     display: flex;
     justify-content: center;
@@ -267,7 +275,7 @@ input#mc-embedded-subscribe {
         background-size: cover;
         display: flex;
         flex-direction: column;
-        height: 27rem;
+        height: auto;
         padding-top: 2rem;
     }
 

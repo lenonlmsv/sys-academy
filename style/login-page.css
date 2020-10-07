@@ -3,8 +3,13 @@
         background-color: var(--color-background);
     }
 
+    /* Esconde a opção de login anônimo */
+    #region-main div.card-block div.mt-2 {
+        display: none;
+    }
+
     body#page-login-index  {
-        background-repeat: no-repeat;
+        background-repeat: unset;
     }
 
     h1.card-header.text-center {
@@ -91,6 +96,7 @@
 
         body#page-login-index {
             background-size: 100% 100%;
+            background-repeat: no-repeat;
         }
 
         body#page-login-index, html, body {

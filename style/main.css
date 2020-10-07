@@ -15,7 +15,8 @@ IMPORTADO DIRETO PARA DENTRO DO MOODLE EM DASHBOARD > SITE ADMINISTRATION > APPE
     --color-text-light: rgb(172, 172, 173, 0.6);
     --color-text-dark: #3d3d3d;
     /* Imagens */
-    --image-footer: url('/sys-academy/images/layout-images/background-rodape.png')
+    --image-footer: url('/sys-academy/images/layout-images/background-rodape.jpg');
+    --image-newsletter: url('/sys-academy/images/customized-images/newsletter-v2.png');
 }
 
 @font-face {

@@ -13,7 +13,11 @@ imgDiv.append(textNode);
 
 
 /* Reposiciona o título de 'novidade' */
-$('#fordsonlogin').prepend($('#newsTitle'));
+//$('#fordsonlogin').prepend($('#newsTitle'));
+
+/* Reposiciona o link de recuperação de senha */
+var retPassword = document.querySelector('div.forgetpass');
+document.querySelector("#login").appendChild(retPassword)
 
 /* Cria mensagem de login */
 let imgLogin = document.querySelector('.btn.btn-secondary.btn-block img').cloneNode(true);

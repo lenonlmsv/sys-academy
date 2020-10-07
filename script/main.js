@@ -1,8 +1,11 @@
 //Seleciona o estilo a ser importado para a página
 let pageTitleControler = document.querySelector('body').id;
+let pageGiveClasses = document.querySelector('div.giveClassSelector');
 
 //Insere os elementos na home sem estar logado
-if (pageTitleControler.includes('page-site-index') && ($('div.usermenu span.login').text().includes('ainda não se identificou') || $('div.usermenu span.login').text().includes('not logged'))) {
+if (pageTitleControler.includes('page-site-index') && $('#logInID' != null)) {
+    //$('div.usermenu span.login').text().includes('ainda não se identificou') || $('div.usermenu span.login').text().includes('not logged'))) {
+    
     //Insere o CSS correspondente
     let homePageCSS = document.createElement('link');
     homePageCSS.href = '/sys-academy/style/home-page.css';
@@ -21,17 +24,18 @@ if (pageTitleControler.includes('page-site-index') && ($('div.usermenu span.logi
     homePageScriptPartial.type = 'text/javascript';
     homePageScriptPartial.src = '/sys-academy/script/home-page-partial.js'
     document.body.appendChild(homePageScriptPartial);
-    console.log('Script page-site-index (sem login) executado')
+    console.log('Script page-site-index executado')
+    
+    //Executa na página interna de 'home'
+    if (pageTitleControler.includes('page-site-index') && document.querySelector('div.usermenu').querySelector('span.userbutton') != null) {
+        /* Remove elementos quando logado */
+        //$('#frontpage-available-course-list, div.markettiles, #mc_embed_signup').css('display','none');
+
+        
+        console.log('Script page-site-index (logado) executado')  
+    }
 }
 
-else if (pageTitleControler.includes('page-site-index') && document.querySelector('div.usermenu').querySelector('span.userbutton') != null) {
-    /* Remove elementos quando logado */
-    $('#frontpage-available-course-list, div.markettiles, #mc_embed_signup').css('display','none');
-    
-    const newLocal = window.onload = () => { $('#mc_embed_signup').css('display', 'none'); };
-    newLocal();
-    console.log('Script page-site-index (logado) executado')  
-}
 
 //Insere os elementos na página de login
 else if (pageTitleControler.includes('page-login-index')) {
@@ -56,10 +60,10 @@ else if (pageTitleControler.includes('page-my-index')) {
     dashboardPageCSS.rel = 'stylesheet';
     document.head.appendChild(dashboardPageCSS);
     //Insere o JS correspondente
-    /*let dashboardPageScript = document.createElement('script');
+    let dashboardPageScript = document.createElement('script');
     dashboardPageScript.type = 'text/javascript';
     dashboardPageScript.src = '/sys-academy/script/dashboard-page.js'
-    document.body.appendChild(dashboardPageScript);*/
+    document.body.appendChild(dashboardPageScript);
 }
 
 else if (pageTitleControler.includes('page-calendar-view')) {
@@ -75,3 +79,32 @@ else if (pageTitleControler.includes('page-calendar-view')) {
     calendarPageScript.src = '/sys-academy/script/calendar-page.js'
     document.body.appendChild(calendarPageScript);*/
 }
+
+else if (pageTitleControler.includes('page-login-signup')) {
+    //Insere o CSS correspondente
+    let pageSignUp = document.createElement('link');
+    pageSignUp.href = '/sys-academy/style/signup-page.css';
+    pageSignUp.rel = 'stylesheet';
+    document.head.appendChild(pageSignUp);
+    console.log('Script de página de cadastro executado com sucesso')
+    //Insere o JS correspondente
+    /*let pageSignUpScript = document.createElement('script');
+    pageSignUpScript.type = 'text/javascript';
+    pageSignUpScript.src = '/sys-academy/script/signup-page.js' //Ainda não criado
+    document.body.appendChild(pageSignUpScript);*/
+}
+
+//Importa o script para as páginas criadas com o plugin
+/*else if (pageTitleControler.includes('page-login-signup') && pageGiveClasses != null) {
+    //Insere o CSS correspondente
+    let giveClassesStyle = document.createElement('link');
+    giveClassesStyle.href = '/sys-academy/style/give-classes-page.css';
+    giveClassesStyle.rel = 'stylesheet';
+    document.head.appendChild(giveClassesStyle);
+    console.log('Script de página de cadastro executado com sucesso')
+    //Insere o JS correspondente
+    let giveClassesScript = document.createElement('script');
+    giveClassesScript.type = 'text/javascript';
+    giveClassesScript.src = '/sys-academy/script/give-classes-page.js' //Ainda não criado
+    document.body.appendChild(giveClassesScript);
+}*/

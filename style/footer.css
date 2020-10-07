@@ -9,6 +9,10 @@
     font-size: 1.4rem!important;
 }
 
+#organizeForm {
+    display: flex;
+}
+
 #page-footer div.col-md-8, #page-footer div.col-md-4 {
     padding: 0!important;
 }
@@ -17,8 +21,41 @@
     margin-top: 2rem;
 }
 
-#divFooter, .tool_dataprivacy, .sitelink, .homelink {
+#newsLetter { /* Imagem do rodapé */
+    background-image: url(/)
+}
+
+#divFooter, .tool_dataprivacy, .sitelink, .homelink, #theme_switch_link {
     display: none!important;
+}
+
+#page-footer div.text_to_html > div {
+    background-image: var(--image-newsletter);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8rem;
+    background-position: center;
+}
+
+#page-footer div.text_to_html p, p.helplink {
+    display: none!important;
+}
+
+/* Configurações do formulário mail chimp */
+#mce-EMAIL {
+    margin-right: -5px;
+    width: 90%;
+    height: 2rem;
+}
+
+#mc-embedded-subscribe-form {
+    padding: 0 !important;
+}
+
+#buttonSubmit {
+    height: 2rem;
+    border: none;
+    background-color: gray;
 }
 
 div.text_to_html p {
@@ -33,7 +70,7 @@ div.text_to_html p {
 }
 
 .footercontact li i {
-    color: var(--color-primary);
+    color: gray/*var(--color-primary)*/;
     margin-right: 0.3rem;
     display: block;
     font-size: 2rem;    
@@ -52,7 +89,23 @@ ul.list-unstyled.pt-3 {
     color: var(--color-primary);
 }
 
-@media (min-width: 1200px) {
+/* Ícones de idioma */
+
+.languageFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.IconFlagFooter + .IconFlagFooter {
+    margin-left: 1rem;
+}
+
+@media (min-width: 800px) {
+    /* Ícones de idioma */
+    .languageFooter {
+        display: none;
+    }
+
     #region-main {
         border-bottom: 0 !important;
     }
@@ -61,13 +114,14 @@ ul.list-unstyled.pt-3 {
         background-color: unset !important;
         background-image: var(--image-footer);
         background-repeat: no-repeat;
-        padding: 2rem 0!important;
+        padding: 4rem 0 0 2rem!important;
         background-size: cover;
-        height: 30rem;
+        height: auto;
+        margin-top: 3rem;
     }
 
     #page-footer .container {
-        position: absolute;
+        position: relative;
         margin: 0 auto;
         bottom: 2rem;
         right: 0;
@@ -101,6 +155,30 @@ ul.list-unstyled.pt-3 {
 
     .brandbox ul {
         text-align: left;
+    }
+
+    #page-footer div.text_to_html > div {
+        background-position: left;
+    }
+
+    /* Configuração do forms */
+    .mce_inline_error {
+        width: 50% !important;
+    }
+
+    #mc_embed_signup {
+        margin-top: -2rem;
+    }
+
+    @media(min-width:2000px) {
+        #page-footer {
+            height: 750px;
+        }
+    }
+
+    /* Configurações do formulário mail chimp */
+    #mce-EMAIL {
+    width: 70%!important;
     }
 
 
