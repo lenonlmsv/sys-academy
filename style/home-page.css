@@ -169,10 +169,12 @@ div.market-tile {
     background-color: var(--color-background)!important;
 }
 
-h3.card-title {
+.market-tile h3.card-title {
     margin-bottom: 0!important;
     font-size: 1rem;
     color: var(--color-text-primary);
+
+    display: none; /* Pedido na última alteração */
 }
 
 .card-title {
@@ -333,6 +335,9 @@ input#mc-embedded-subscribe {
     #instuctorArea {
         padding: 0 10rem;
         margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     div.contentImg {
@@ -352,6 +357,7 @@ input#mc-embedded-subscribe {
         border-bottom: 0;
         padding: 0 10rem;
         text-align: center;
+        margin-bottom: 4rem;
     }
 
     #mktDiv h2 {
@@ -359,6 +365,7 @@ input#mc-embedded-subscribe {
         border-top: 3px solid var(--color-primary-dark);
         border-bottom: 3px solid var(--color-primary-dark);
         width: 100%;
+        line-height: 5rem;
     }
 
     div.markettiles {
@@ -386,6 +393,7 @@ input#mc-embedded-subscribe {
         width: auto;
         height: 15rem;
         margin: 1rem auto !important;
+        border-radius: 10px;
     }
 
     .marketing1image:hover,.marketing2image:hover,.marketing3image:hover,.marketing4image:hover,.marketing5image:hover,.marketing6image:hover,.marketing7image:hover, .marketing8image:hover,.marketing9image:hover {
@@ -394,5 +402,10 @@ input#mc-embedded-subscribe {
 
     div.container-fluid {
         margin-top: 0rem!important;
+    }
+
+    .container-fluid div.row {
+        display: flex;
+        justify-content: center;
     }
 }

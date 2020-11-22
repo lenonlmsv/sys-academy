@@ -62,6 +62,12 @@ for (i=0; i < divsToCategories.length; i++) {
         divsToCategories[i].childNodes[0].setAttribute('alt','Gestão');
         //divsToCategories[i].childNodes[1].childNodes[0].setAttribute('style','background-color:var(--color-secondary-dark); background-image:none!important');
     }
+
+    else {
+        divsToCategories[i].childNodes[0].setAttribute('src','/sys-academy/images/customized-images/botao-corporate.png');
+        divsToCategories[i].childNodes[0].setAttribute('alt','Corporate');
+        //divsToCategories[i].childNodes[1].childNodes[0].setAttribute('style','background-color:var(--color-secondary-dark); background-image:none!important');
+    }
 }
 
 /* Reposiciona itens dentro da área de marketing */
@@ -74,9 +80,9 @@ for (i = 0; i < primeDivMktg.length; i++) {
         eraseContent[0].innerHTML = ""
 }
 
-/* Decora o elemento do meio na área de marketing */
+/* Decora o elemento do meio na área de marketing 
 document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.border = "1px solid gray";
-document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.borderRadius = "10px";
+document.querySelectorAll('#region-main .markettiles div.col-md-4')[1].style.borderRadius = "10px";*/
 
 //Reposiciona o botão
 let buttonCourse = document.getElementById('buttonCourses');
